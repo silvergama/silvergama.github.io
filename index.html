@@ -9,6 +9,8 @@
         />
         <title>Silver Gama</title>
 
+        <link rel="stylesheet" href="stylesheets/styles.css" />
+        <link rel="stylesheet" href="stylesheets/all.min.css">
         <link
             rel="stylesheet"
             href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
@@ -20,10 +22,10 @@
             <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
     </head>
-    <body class="bg-light d-flex flex-column h-100">
-        <div class="container bg-lightrow justify-content-between ">
+    <body class="d-flex flex-column h-100">
+        <div class="container justify-content-between pb-3">
             <nav
-                class="navbar navbar-expand-lg navbar-light bg-light row justify-content-between"
+                class="navbar navbar-expand-lg row justify-content-between"
             >
                 <div class="brand col">
                     <a class="navbar-brand" href="#"><h1>Silver Gama</h1></a>
@@ -54,14 +56,35 @@
                 </div>
             </nav>
         </div>
-        <div class="main">
-        
+
+        <div class="main container py-5">
+            <div class="row justify-content-center">
+                <div class="col-6 text-center perfil">
+                    <img
+                        src="https://pbs.twimg.com/profile_images/1169814172793622528/SksoOg3j_400x400.jpg"
+                        alt="..."
+                        class="rounded-circle p-2"
+                    />
+                </div>
+                <div class="col-6 text-justify pr-4">
+                    <div class="description">
+                    <span>Hi, I'm</span>
+                    <h1>Silver Gama</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed ultrices velit. Nulla facilisi. Integer condimentum libero eget magna fringilla, et porttitor tortor aliquet. Cras quis sagittis tortor, a suscipit ex. Aenean venenatis, ex ac volutpat dictum, nulla orci iaculis risus, non consectetur mi leo in dolor. </p>
+                    </div>
+                    <div class="social">
+                        <a href="https://twitter.com/silver_mgama" target="_blank" class="twitter"><i class="fab fa-twitter pr-1"></i></a>
+                        <a href="https://www.linkedin.com/in/silvergama/"  target="_blank" class="linkedin"><i class="fab fa-linkedin-in pr-1"></i></a>
+                        <a href="https://www.github.com/silvergama/"  target="_blank" class="github"><i class="fab fa-github pr-1"></i></a>
+
+                    </div>
+                </div>
+            </div>
         </div>
-        <footer class="footer mt-auto py-3">
+
+        <footer class="footer mt-auto py-3 bg-dark">
             <div class="container">
-                <span class="text-muted"
-                    >© 2020 Silver Gama.</span
-                >
+                <span class="text-muted">© 2020 Silver Gama.</span>
             </div>
         </footer>
 
