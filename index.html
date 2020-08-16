@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="h-100">
+<html lang="en">
     <head>
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="chrome=1" />
@@ -10,7 +10,7 @@
         <title>Silver Gama</title>
 
         <link rel="stylesheet" href="stylesheets/styles.css" />
-        <link rel="stylesheet" href="stylesheets/all.min.css">
+        <link rel="stylesheet" href="stylesheets/all.min.css" />
         <link
             rel="stylesheet"
             href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
@@ -22,37 +22,31 @@
             <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
     </head>
-    <body class="d-flex flex-column h-100">
-        <div class="container justify-content-between pb-3">
-            <nav
-                class="navbar navbar-expand-lg row justify-content-between"
-            >
-                <div class="brand col">
-                    <a class="navbar-brand" href="#"><h1>Silver Gama</h1></a>
-                </div>
-                <div
-                    class="collapse navbar-collapse col-6"
-                    id="navbarSupportedContent"
-                >
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">About Me<span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Portfolio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Timeline</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
-
-        <div class="main container py-5">
+    <body class="d-flex flex-column">
+        <nav class="navbar navbar-expand-lg fixed-top  container">
+            <div class="brand col">
+                <a class="navbar-brand" href="#"><h1>Silver Gama</h1></a>
+            </div>
+            <div class="collapse navbar-collapse col-6">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about"
+                            >About Me<span class="sr-only">(current)</span></a
+                        >
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#timeline">Timeline</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <section class="container justify-content-between pb-3" id="about">
             <div class="row justify-content-center">
                 <div class="col-6 text-center perfil">
                     <img
@@ -63,21 +57,38 @@
                 </div>
                 <div class="col-6 text-justify pr-4">
                     <div class="description">
-                    <span>Hi, I'm</span>
-                    <h1>Silver Gama</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed ultrices velit. Nulla facilisi. Integer condimentum libero eget magna fringilla, et porttitor tortor aliquet. Cras quis sagittis tortor, a suscipit ex. Aenean venenatis, ex ac volutpat dictum, nulla orci iaculis risus, non consectetur mi leo in dolor. </p>
+                        <span>Hi, my name is</span>
+                        <h1>Silver Gama</h1>
+                        <p>
+                            I'm a software engineer and currently work at <a href="https://grupozap.com">Grupo Zap</a>
+                            I started studying software development in early 2013 and a few months later I got my first job as a developer. 
+                            Since then I have been improving my knowledge and working with several languages among them PHP, Python, and Go.
+                        </p>
                     </div>
                     <div class="social">
-                        <a href="https://twitter.com/silver_mgama" target="_blank" class="twitter"><i class="fab fa-twitter pr-1"></i></a>
-                        <a href="https://www.linkedin.com/in/silvergama/"  target="_blank" class="linkedin"><i class="fab fa-linkedin-in pr-1"></i></a>
-                        <a href="https://www.github.com/silvergama/"  target="_blank" class="github"><i class="fab fa-github pr-1"></i></a>
-
+                        <a
+                            href="https://twitter.com/silver_mgama"
+                            target="_blank"
+                            class="twitter"
+                            ><i class="fab fa-twitter pr-1"></i
+                        ></a>
+                        <a
+                            href="https://www.linkedin.com/in/silvergama/"
+                            target="_blank"
+                            class="linkedin"
+                            ><i class="fab fa-linkedin-in pr-1"></i
+                        ></a>
+                        <a
+                            href="https://www.github.com/silvergama/"
+                            target="_blank"
+                            class="github"
+                            ><i class="fab fa-github pr-1"></i
+                        ></a>
                     </div>
                 </div>
             </div>
-        </div>
-
-        <footer class="footer mt-auto py-3 bg-dark">
+        </section>
+        <footer class="footer mt-auto bg-dark py-3">
             <div class="container">
                 <span class="text-muted">© 2020 Silver Gama.</span>
             </div>

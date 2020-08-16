@@ -68,6 +68,10 @@ body {
     color: #eee !important;
     font-weight: 400;
 }
+section {
+    height:100vh;
+    width: 100vw;
+}
 
 .perfil img {
     border: solid 1px #ccc;
