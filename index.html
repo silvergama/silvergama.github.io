@@ -23,25 +23,39 @@
         <![endif]-->
     </head>
     <body class="d-flex flex-column">
-        <nav class="navbar navbar-expand-lg fixed-top  container">
-            <div class="row row-cols-1 row-cols-md-2">
-                <div class="brand col">
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+            <div class="container row-cols-2">
+                <div class="col">
                     <a class="navbar-brand" href="#"><h1>Silver Gama</h1></a>
                 </div>
-                <div class="collapse navbar-collapse col">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#about"
-                                >About Me<span class="sr-only"
-                                    >(current)</span
-                                ></a
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div
+                    class="collapse navbar-collapse"
+                    id="navbarSupportedContent"
+                >
+                    <ul class="navbar-nav mr-auto justify-content-end col">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#about-me"
+                                >About Me
+                                <span class="sr-only">(current)</span></a
                             >
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#portfolio">Portfolio</a>
+                            <a class="nav-link" href="#timeline">Timeline</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#timeline">Timeline</a>
+                            <a class="nav-link" href="#portfolio">Portfolio</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#contact">Contact</a>
@@ -50,7 +64,7 @@
                 </div>
             </div>
         </nav>
-        <section class="container justify-content-between pb-3" id="about">
+        <article class="container justify-content-between pb-3" id="about-me">
             <div class="row row-cols-1 row-cols-md-2 justify-content-center">
                 <div class="col text-center perfil">
                     <img
@@ -97,7 +111,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </article>
         <footer class="footer mt-auto bg-dark py-3">
             <div class="container">
                 <span class="text-muted">© 2020 Silver Gama.</span>
